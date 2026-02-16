@@ -5,9 +5,9 @@
 WORKDIR /net
 
 # INSTALL FLASK
-RUN  pip insatll flask
+RUN  pip install flask
 
-COPY sample.py
+COPY sample.py .
     
 #EXPOSE conatiner port
 EXPOSE 8090

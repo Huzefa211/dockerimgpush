@@ -1,6 +1,6 @@
-from flask import flask
+from flask import Flask
 
-app = Flask(_name_)
+app = Flask(__name__)
 
 def normal_function():
     return "This will be deployed on the Agent Server"
@@ -9,5 +9,5 @@ def normal_function():
 def home():
   return normal_function()
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)

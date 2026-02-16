@@ -1,7 +1,7 @@
 pipeline {
   agent { label "${LABEL_NAME}" }
 
-  enviroment {
+  environment {
     IMAGE_NAME = "myimg"
     IMAGE_TAG = "${BUILD_NUMBER}"
     CONTAINER_NAME = "webapp"

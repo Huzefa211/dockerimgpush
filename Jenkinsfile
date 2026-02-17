@@ -40,7 +40,7 @@ stage ('BUILD') {
   }
     post {
       success { 
-        archiveArtifacts artifacts: '*.tar', followSymlinks: false
+        archiveArtifacts artifacts: '*.tar'
       }
       failure {
         echo "Deployment is failed, Please check logs"   

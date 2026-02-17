@@ -42,7 +42,7 @@ stage ('BUILD') {
         archiveArtifacts artifacts: '*.tar', followSymlinks: false
       }
       failure {
-        echo "Deployment is failed"   
+        echo "Deployment is failed, Please check logs"   
       }
     }  
   }

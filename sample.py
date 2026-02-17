@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 
 def normal_function():
-    return "This will be deployed on the Agent Server"
+    return "Moosa, Furqan bhai jaldi se meri plaaato ki website banao time nahi hai itna"
 
 @app.route("/")
 def home():
